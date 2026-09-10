@@ -1,4 +1,4 @@
-DOMAIN = "pac_piscine_greco"
+DOMAIN = "pac_piscine_geco"
 
 CONF_HOST = "host"
 CONF_PORT = "port"

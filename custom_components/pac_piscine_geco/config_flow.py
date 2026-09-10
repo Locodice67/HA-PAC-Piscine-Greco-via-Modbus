@@ -13,7 +13,7 @@ from .const import (
 )
 
 
-class PacPiscineGrecoConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
+class PacPiscineGecoConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     VERSION = 1
 
     async def async_step_user(self, user_input=None):
@@ -46,10 +46,10 @@ class PacPiscineGrecoConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     @staticmethod
     @callback
     def async_get_options_flow(config_entry):
-        return PacPiscineGrecoOptionsFlow()
+        return PacPiscineGecoOptionsFlow()
 
 
-class PacPiscineGrecoOptionsFlow(config_entries.OptionsFlow):
+class PacPiscineGecoOptionsFlow(config_entries.OptionsFlow):
     async def async_step_init(self, user_input=None):
         if user_input is not None:
             return self.async_create_entry(title="", data=user_input)

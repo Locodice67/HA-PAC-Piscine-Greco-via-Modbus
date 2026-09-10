@@ -1,7 +1,7 @@
-# HA — PAC Piscine Greco via Modbus
+# HA — PAC Piscine Geco via Modbus
 
 Intégration personnalisée Home Assistant pour la **PAC (pompe à chaleur) de piscine
-Greco** (modèle IPHCR45 et contrôleurs proches des séries greco / AES / Madimack)
+Geco** (modèle IPHCR45 et contrôleurs proches des séries Geco / AES / Madimack)
 exposée en **Modbus TCP** via une passerelle RS485 → Ethernet.
 
 Le style et l'architecture s'inspirent de
@@ -37,17 +37,17 @@ timer, reconnexion automatique et relecture des écritures pour les confirmer.
 ### HACS (dépôt personnalisé)
 
 1. HACS → Intégrations → ⋯ → *Dépôts personnalisés*.
-2. Ajouter `Locodice67/HA-PAC-Piscine-Greco-via-Modbus` en catégorie *Intégration*.
+2. Ajouter `Locodice67/HA-PAC-Piscine-Geco-via-Modbus` en catégorie *Intégration*.
 3. Installer, puis redémarrer Home Assistant.
 
 ### Manuelle
 
-Copier le dossier `custom_components/pac_piscine_greco/` dans `/config/custom_components/`,
+Copier le dossier `custom_components/pac_piscine_geco/` dans `/config/custom_components/`,
 puis redémarrer Home Assistant.
 
 ## Configuration
 
-Paramètres → Appareils et services → Ajouter une intégration → **PAC Piscine Greco**.
+Paramètres → Appareils et services → Ajouter une intégration → **PAC Piscine Geco**.
 
 | Champ | Valeur usuelle |
 |---|---|
@@ -61,6 +61,6 @@ L'intervalle est modifiable ensuite via le bouton *Configurer* de l'intégration
 ## Avertissement
 
 Les adresses de registres proviennent d'un projet communautaire de rétro-ingénierie
-sur une PAC Greco IPHCR45. Les cartes greco / AES / Madimack se ressemblent beaucoup,
+sur une PAC Geco IPHCR45. Les cartes Geco / AES / Madimack se ressemblent beaucoup,
 mais le modèle exact peut différer. **Vérifie les valeurs (températures eau/air en
 particulier) contre les mesures réelles avant toute mise en production.**

@@ -2,7 +2,7 @@
   "config": {
     "step": {
       "user": {
-        "title": "Set up the Greco pool heat pump",
+        "title": "Set up the Geco pool heat pump",
         "description": "Enter the connection details of the heat pump's Modbus TCP/IP gateway.",
         "data": {
           "host": "IP address",
@@ -23,7 +23,7 @@
   "options": {
     "step": {
       "init": {
-        "title": "Greco pool heat pump options",
+        "title": "Geco pool heat pump options",
         "data": {
           "scan_interval": "Refresh interval (seconds)"
         }

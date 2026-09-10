@@ -1,5 +1,5 @@
-# Carte des registres de la PAC Greco (IPHCR45 et contrôleurs proches des séries
-# greco/AES/Madimack). Les adresses proviennent d'un projet communautaire de
+# Carte des registres de la PAC Geco (IPHCR45 et contrôleurs proches des séries
+# Geco/AES/Madimack). Les adresses proviennent d'un projet communautaire de
 # rétro-ingénierie ; à re-vérifier sur l'unité avant mise en production.
 #
 # Types de registres :
@@ -9,7 +9,7 @@
 #   discrete_input  -> entrée TOR           (FC02 lecture seule)
 
 DEVICE_NAME = "PAC Piscine"
-MANUFACTURER = "Greco"
+MANUFACTURER = "Geco"
 MODEL = "IPHCR45 (Modbus)"
 
 # Capteurs analogiques (registres d'entrée). value = raw * scale + offset

@@ -2,7 +2,7 @@
   "config": {
     "step": {
       "user": {
-        "title": "Configurer la PAC Piscine Greco",
+        "title": "Configurer la PAC Piscine Geco",
         "description": "Entrez les informations de connexion à la passerelle Modbus TCP/IP de la PAC.",
         "data": {
           "host": "Adresse IP",
@@ -23,7 +23,7 @@
   "options": {
     "step": {
       "init": {
-        "title": "Options de la PAC Piscine Greco",
+        "title": "Options de la PAC Piscine Geco",
         "data": {
           "scan_interval": "Intervalle de rafraîchissement (secondes)"
         }
