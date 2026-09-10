@@ -1,0 +1,99 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configurer la PAC Piscine Greco",
+        "description": "Entrez les informations de connexion à la passerelle Modbus TCP/IP de la PAC.",
+        "data": {
+          "host": "Adresse IP",
+          "port": "Port TCP",
+          "unit_id": "Adresse Modbus (esclave)",
+          "scan_interval": "Intervalle de rafraîchissement (secondes)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossible de se connecter à la passerelle Modbus",
+      "unknown": "Erreur inattendue"
+    },
+    "abort": {
+      "already_configured": "Cette PAC est déjà configurée"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options de la PAC Piscine Greco",
+        "data": {
+          "scan_interval": "Intervalle de rafraîchissement (secondes)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "temperature_eau": {
+        "name": "Température eau"
+      },
+      "temperature_air": {
+        "name": "Température air"
+      },
+      "intensite_compresseur": {
+        "name": "Intensité compresseur"
+      },
+      "tension_pfc": {
+        "name": "Tension PFC"
+      },
+      "compresseur": {
+        "name": "Compresseur"
+      }
+    },
+    "binary_sensor": {
+      "modbus_status": {
+        "name": "État de la communication Modbus"
+      },
+      "status": {
+        "name": "Status"
+      },
+      "defaut_general": {
+        "name": "Défaut général"
+      },
+      "defaut_e3": {
+        "name": "Défaut E3"
+      }
+    },
+    "switch": {
+      "marche_arret": {
+        "name": "Marche/Arrêt"
+      }
+    },
+    "number": {
+      "consigne_temperature": {
+        "name": "Consigne température"
+      }
+    },
+    "select": {
+      "mode": {
+        "name": "Mode",
+        "state": {
+          "auto": "Auto",
+          "heat": "Chaud",
+          "cool": "Froid"
+        }
+      },
+      "mode_travail": {
+        "name": "Mode de travail",
+        "state": {
+          "smart": "Smart (100 %)",
+          "silence": "Silence (85 %)",
+          "super_silence": "Super Silence (24 %)"
+        }
+      }
+    },
+    "climate": {
+      "thermostat": {
+        "name": "Thermostat"
+      }
+    }
+  }
+}

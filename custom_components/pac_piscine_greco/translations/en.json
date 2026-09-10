@@ -1,0 +1,99 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up the Greco pool heat pump",
+        "description": "Enter the connection details of the heat pump's Modbus TCP/IP gateway.",
+        "data": {
+          "host": "IP address",
+          "port": "TCP port",
+          "unit_id": "Modbus unit (slave) id",
+          "scan_interval": "Refresh interval (seconds)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to connect to the Modbus gateway",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This heat pump is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Greco pool heat pump options",
+        "data": {
+          "scan_interval": "Refresh interval (seconds)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "temperature_eau": {
+        "name": "Water temperature"
+      },
+      "temperature_air": {
+        "name": "Air temperature"
+      },
+      "intensite_compresseur": {
+        "name": "Compressor current"
+      },
+      "tension_pfc": {
+        "name": "PFC voltage"
+      },
+      "compresseur": {
+        "name": "Compressor"
+      }
+    },
+    "binary_sensor": {
+      "modbus_status": {
+        "name": "Modbus communication status"
+      },
+      "status": {
+        "name": "Status"
+      },
+      "defaut_general": {
+        "name": "General fault"
+      },
+      "defaut_e3": {
+        "name": "E3 fault"
+      }
+    },
+    "switch": {
+      "marche_arret": {
+        "name": "On/Off"
+      }
+    },
+    "number": {
+      "consigne_temperature": {
+        "name": "Temperature setpoint"
+      }
+    },
+    "select": {
+      "mode": {
+        "name": "Mode",
+        "state": {
+          "auto": "Auto",
+          "heat": "Heat",
+          "cool": "Cool"
+        }
+      },
+      "mode_travail": {
+        "name": "Working mode",
+        "state": {
+          "smart": "Smart (100%)",
+          "silence": "Silence (85%)",
+          "super_silence": "Super Silence (24%)"
+        }
+      }
+    },
+    "climate": {
+      "thermostat": {
+        "name": "Thermostat"
+      }
+    }
+  }
+}

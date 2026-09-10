@@ -1,0 +1,13 @@
+{
+  "domain": "pac_piscine_greco",
+  "name": "PAC Piscine Greco",
+  "codeowners": ["@Locodice67"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/Locodice67/HA-PAC-Piscine-Greco-via-Modbus",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/Locodice67/HA-PAC-Piscine-Greco-via-Modbus/issues",
+  "requirements": ["pymodbus>=3.9.2"],
+  "version": "0.1.0"
+}
