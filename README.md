@@ -4,11 +4,6 @@ Intégration personnalisée Home Assistant pour la **PAC (pompe à chaleur) de p
 Geco** (modèle IPHCR45 et contrôleurs proches des séries Geco / AES / Madimack)
 exposée en **Modbus TCP** via une passerelle RS485 → Ethernet.
 
-Le style et l'architecture s'inspirent de
-[HA-Pool-Technologie-via-Modbus](https://github.com/Profil404/HA-Pool-Technologie-via-Modbus) :
-connexion Modbus TCP persistante pilotée dans un thread executor, polling par
-timer, reconnexion automatique et relecture des écritures pour les confirmer.
-
 ## Entités créées
 
 | Plateforme | Entité | Registre |
