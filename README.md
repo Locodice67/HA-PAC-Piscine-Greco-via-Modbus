@@ -70,9 +70,18 @@ Relier **`B` → `B`**, **`A` → `A`** et **`G` → `GND`**. Le **`+12V` n'est 
 
 ### Configuration de la passerelle
 
-- Mode **Modbus TCP server**
-- Série : **9600 / 8N1**, esclave **1**
-- IP fixe, port TCP **`4196`** (valeur par défaut Waveshare ; modifiable dans l'interface de la passerelle — ex. `4197`)
+Dans l'interface web de la passerelle (Waveshare RS485 TO ETH / POE) :
+
+| Réglage | Valeur |
+|---|---|
+| **Work Mode** | `TCP Server` |
+| **Protocol** | `Modbus TCP to RTU` |
+| **Device Port** | `4196` (défaut Waveshare ; ici `4197`) |
+| **Baud Rate / Databits / Parity / Stopbits** | `9600` / `8` / `None` / `1` |
+| **IP mode** | `Static` |
+| **Esclave Modbus** | `1` |
+
+![Configuration de la passerelle Waveshare](images/config_waveshare.png)
 
 ### Installation de l'intégration
 
@@ -255,9 +264,18 @@ Connect **`B` → `B`**, **`A` → `A`** and **`G` → `GND`**. **`+12V` is not 
 
 ### Gateway configuration
 
-- Mode **Modbus TCP server**
-- Serial: **9600 / 8N1**, slave **1**
-- Static IP, TCP port **`4196`** (Waveshare default; configurable in the gateway web UI — e.g. `4197`)
+In the gateway web UI (Waveshare RS485 TO ETH / POE):
+
+| Setting | Value |
+|---|---|
+| **Work Mode** | `TCP Server` |
+| **Protocol** | `Modbus TCP to RTU` |
+| **Device Port** | `4196` (Waveshare default; here `4197`) |
+| **Baud Rate / Databits / Parity / Stopbits** | `9600` / `8` / `None` / `1` |
+| **IP mode** | `Static` |
+| **Modbus slave** | `1` |
+
+![Waveshare gateway configuration](images/config_waveshare.png)
 
 ### Integration installation
 
