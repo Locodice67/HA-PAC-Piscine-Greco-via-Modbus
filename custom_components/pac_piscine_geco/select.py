@@ -5,19 +5,19 @@ from homeassistant.components.select import SelectEntity
 
 from .const import DOMAIN
 from .entity import PacDeviceMixin
-from .models import SELECTS
 
 _LOGGER = logging.getLogger(__name__)
 
 
 async def async_setup_entry(hass, config_entry, async_add_entities):
-    controller = hass.data[DOMAIN][config_entry.entry_id]["controller"]
+    entry_data = hass.data[DOMAIN][config_entry.entry_id]
+    controller = entry_data["controller"]
     handler = controller.handler
 
     async_add_entities(
         [
             PacRegisterSelect(hass, handler, controller, config_entry.entry_id, conf)
-            for conf in SELECTS
+            for conf in entry_data["model_config"]["selects"]
         ]
     )
 

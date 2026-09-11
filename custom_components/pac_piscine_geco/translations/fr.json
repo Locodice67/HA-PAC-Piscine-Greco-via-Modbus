@@ -2,7 +2,21 @@
   "config": {
     "step": {
       "user": {
-        "title": "Configurer la PAC Piscine Geco",
+        "title": "Marque de la PAC",
+        "description": "Sélectionnez la marque de votre pompe à chaleur.",
+        "data": {
+          "brand": "Marque"
+        }
+      },
+      "model": {
+        "title": "Modèle de la PAC",
+        "description": "Sélectionnez le modèle correspondant à votre appareil.",
+        "data": {
+          "model": "Modèle"
+        }
+      },
+      "connection": {
+        "title": "Connexion Modbus",
         "description": "Entrez les informations de connexion à la passerelle Modbus TCP/IP de la PAC.",
         "data": {
           "host": "Adresse IP",
@@ -86,7 +100,8 @@
         "state": {
           "smart": "Smart (100 %)",
           "silence": "Silence (85 %)",
-          "super_silence": "Super Silence (24 %)"
+          "super_silence": "Super Silence (24 %)",
+          "turbo": "Turbo"
         }
       }
     },

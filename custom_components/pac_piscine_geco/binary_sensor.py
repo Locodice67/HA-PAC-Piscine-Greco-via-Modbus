@@ -6,18 +6,18 @@ from homeassistant.const import EntityCategory
 
 from .const import DOMAIN
 from .entity import PacDeviceMixin
-from .models import BINARY_SENSORS
 
 
 async def async_setup_entry(hass, config_entry, async_add_entities):
-    controller = hass.data[DOMAIN][config_entry.entry_id]["controller"]
+    entry_data = hass.data[DOMAIN][config_entry.entry_id]
+    controller = entry_data["controller"]
     handler = controller.handler
     entry_id = config_entry.entry_id
 
     entities = [ModbusStatusSensor(entry_id, controller)]
     entities.extend(
         PacRegisterBinarySensor(conf, hass, handler, controller, entry_id)
-        for conf in BINARY_SENSORS
+        for conf in entry_data["model_config"]["binary_sensors"]
     )
     async_add_entities(entities)
 

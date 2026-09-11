@@ -5,17 +5,25 @@ from homeassistant.components.switch import SwitchEntity
 
 from .const import DOMAIN
 from .entity import PacDeviceMixin
-from .models import SWITCH
 
 _LOGGER = logging.getLogger(__name__)
 
 
 async def async_setup_entry(hass, config_entry, async_add_entities):
-    controller = hass.data[DOMAIN][config_entry.entry_id]["controller"]
+    entry_data = hass.data[DOMAIN][config_entry.entry_id]
+    controller = entry_data["controller"]
     handler = controller.handler
 
     async_add_entities(
-        [PacSwitch(hass, handler, controller, config_entry.entry_id, SWITCH)]
+        [
+            PacSwitch(
+                hass,
+                handler,
+                controller,
+                config_entry.entry_id,
+                entry_data["model_config"]["switch"],
+            )
+        ]
     )
 
 

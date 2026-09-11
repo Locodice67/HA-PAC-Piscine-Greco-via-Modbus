@@ -5,17 +5,18 @@ from homeassistant.helpers.restore_state import RestoreEntity
 
 from .const import DOMAIN
 from .entity import PacDeviceMixin
-from .models import SENSORS
 
 _LOGGER = logging.getLogger(__name__)
 
 
 async def async_setup_entry(hass, config_entry, async_add_entities):
-    controller = hass.data[DOMAIN][config_entry.entry_id]["controller"]
+    entry_data = hass.data[DOMAIN][config_entry.entry_id]
+    controller = entry_data["controller"]
     handler = controller.handler  # même connexion que les autres plateformes
 
     sensors = [
-        PacSensor(sensor_conf, handler, config_entry.entry_id) for sensor_conf in SENSORS
+        PacSensor(sensor_conf, handler, config_entry.entry_id)
+        for sensor_conf in entry_data["model_config"]["sensors"]
     ]
     async_add_entities(sensors)
 

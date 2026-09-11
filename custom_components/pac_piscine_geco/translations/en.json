@@ -2,7 +2,21 @@
   "config": {
     "step": {
       "user": {
-        "title": "Set up the Geco pool heat pump",
+        "title": "Heat pump brand",
+        "description": "Select the brand of your heat pump.",
+        "data": {
+          "brand": "Brand"
+        }
+      },
+      "model": {
+        "title": "Heat pump model",
+        "description": "Select the model that matches your unit.",
+        "data": {
+          "model": "Model"
+        }
+      },
+      "connection": {
+        "title": "Modbus connection",
         "description": "Enter the connection details of the heat pump's Modbus TCP/IP gateway.",
         "data": {
           "host": "IP address",
@@ -86,7 +100,8 @@
         "state": {
           "smart": "Smart (100%)",
           "silence": "Silence (85%)",
-          "super_silence": "Super Silence (24%)"
+          "super_silence": "Super Silence (24%)",
+          "turbo": "Turbo"
         }
       }
     },

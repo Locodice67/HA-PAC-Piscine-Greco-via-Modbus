@@ -161,7 +161,7 @@ SELECTS = [
         "address": 1,
         "input_type": "holding",
         "icon": "mdi:speedometer",
-        "options": {"smart": 0, "silence": 1, "super_silence": 2},
+        "options": {"smart": 0, "silence": 1, "super_silence": 2, "turbo": 3},
     },
 ]
 
@@ -198,3 +198,41 @@ CLIMATE = {
         "values": {"low": 2, "medium": 1, "high": 0},
     },
 }
+
+# ==========================================================================
+# Marques et modèles supportés
+# --------------------------------------------------------------------------
+# Chaque modèle fournit son propre jeu d'entités (registres). Ajouter un
+# modèle = ajouter une entrée dans `models` ci-dessous (+ ses traductions).
+# ==========================================================================
+
+GEPAC08 = {
+    "name": "GEPAC08",
+    "manufacturer": MANUFACTURER,
+    "model": MODEL,
+    "sensors": SENSORS,
+    "binary_sensors": BINARY_SENSORS,
+    "switch": SWITCH,
+    "number": NUMBER,
+    "selects": SELECTS,
+    "climate": CLIMATE,
+}
+
+BRANDS = {
+    "geco": {
+        "name": "Geco",
+        "models": {
+            "gepac08": GEPAC08,
+        },
+    },
+}
+
+DEFAULT_BRAND = "geco"
+DEFAULT_MODEL = "gepac08"
+
+
+def resolve_model(brand: str, model: str) -> dict:
+    """Retourne la config du modèle demandé, avec repli sur le défaut."""
+    brand_data = BRANDS.get(brand) or BRANDS[DEFAULT_BRAND]
+    models = brand_data["models"]
+    return models.get(model) or models[DEFAULT_MODEL]
