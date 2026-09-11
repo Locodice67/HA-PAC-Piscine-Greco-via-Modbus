@@ -63,7 +63,10 @@ Relier `B` / `A` (RS485) et `G` / `+12V` (alimentation) à la passerelle RS485 �
 | Article | Lien |
 |---|---|
 | **Kit de connecteurs JST-XH** (2/3/4/5/6 broches, pas 2,54 mm) — pour réaliser le connecteur `CN12` | [Amazon.fr — YIXISI, 460 pièces](https://www.amazon.fr/dp/B082ZLYRRN) |
-| **Passerelle RS485 → Ethernet** | Waveshare RS485 TO ETH / POE — voir la [doc Waveshare](https://www.waveshare.com/wiki/RS485_TO_ETH_(B)) |
+| **Passerelle RS485 → Ethernet, 1 canal** | [Amazon.fr — Waveshare](https://www.amazon.fr/dp/B0BRNBTFVC) |
+| **Passerelle RS485 → Ethernet, 2 canaux** (une seule passerelle pour deux équipements) | [Amazon.fr — Waveshare](https://www.amazon.fr/dp/B0CB8LXQFH) |
+
+> La version **1 canal** suffit pour la PAC. La version **2 canaux** permet de raccorder deux équipements RS485 avec une seule passerelle (ex. PAC + électrolyseur). Voir aussi la [doc Waveshare](https://www.waveshare.com/wiki/RS485_TO_ETH_(B)).
 
 ### Configuration de la passerelle
 
@@ -245,7 +248,10 @@ Connect `B` / `A` (RS485) and `G` / `+12V` (power) to the RS485 → Ethernet gat
 | Item | Link |
 |---|---|
 | **JST-XH connector kit** (2/3/4/5/6 pins, 2.54 mm) — to build the `CN12` connector | [Amazon.fr — YIXISI, 460 pcs](https://www.amazon.fr/dp/B082ZLYRRN) |
-| **RS485 → Ethernet gateway** | Waveshare RS485 TO ETH / POE — see the [Waveshare docs](https://www.waveshare.com/wiki/RS485_TO_ETH_(B)) |
+| **RS485 → Ethernet gateway, 1 channel** | [Amazon.fr — Waveshare](https://www.amazon.fr/dp/B0BRNBTFVC) |
+| **RS485 → Ethernet gateway, 2 channels** (a single gateway for two devices) | [Amazon.fr — Waveshare](https://www.amazon.fr/dp/B0CB8LXQFH) |
+
+> The **1-channel** version is enough for the heat pump. The **2-channel** version lets you connect two RS485 devices with a single gateway (e.g. heat pump + electrolyser). See also the [Waveshare docs](https://www.waveshare.com/wiki/RS485_TO_ETH_(B)).
 
 ### Gateway configuration
 
