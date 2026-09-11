@@ -75,12 +75,12 @@ Dernière mise à jour : 2026-09-11.
 - [ ] **README — guide de montage** : ajouter les **photos** (ouverture du capot, repérage du connecteur RS485/Wi-Fi, câblage A/B/12 V) dans `images/`
 - [ ] **README — liens d'achat** : ajouter les liens (Amazon) des **connecteurs** et de la passerelle RS485 → Ethernet
   - Objectif : qu'un « nerd » puisse tout faire de bout en bout sans aide
-- [ ] **Config flow — Marque → Modèle** : étape « Marque » (**Geco**) puis **liste des modèles**, pour ne créer que les registres du modèle choisi (comme l'intégration *pool_technologie*)
+- [x] **Config flow — Marque → Modèle** : étape « Marque » (**Geco**) puis **liste des modèles** (GEPAC08), pour ne créer que les registres du modèle choisi ✅ *fait — commit `7cba3bd`*
 
 ---
 
 ## Points ouverts / à trancher
-- [ ] **Local ≠ dépôt** : l'option `turbo` du sélecteur n'existe qu'en local.
+- [x] **Local = dépôt** : l'option `turbo` du sélecteur est désormais dans le dépôt (plus de divergence).
 - [ ] **Ordre des langues** du README (FR d'abord — actuellement).
 - [ ] **Enrichir le README** : section « Dépannage », sommaire cliquable, photos dans `images/`.
 - [ ] **Rappel protocole** (fiche officielle) : écriture `4x` en **FC06**, `0x` en **FC05** ; **max 3 registres consécutifs** en `3x`/`4x` (48 pour les bits) ; **60 ms** mini entre deux requêtes ; esclave `1`.
