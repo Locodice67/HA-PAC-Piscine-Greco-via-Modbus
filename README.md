@@ -72,7 +72,7 @@ Relier **`B` → `B`**, **`A` → `A`** et **`G` → `GND`**. Le **`+12V` n'est 
 
 - Mode **Modbus TCP server**
 - Série : **9600 / 8N1**, esclave **1**
-- IP fixe, port TCP (selon la passerelle : `4196` ou `4197` chez Waveshare)
+- IP fixe, port TCP **`4196`** (valeur par défaut Waveshare ; modifiable dans l'interface de la passerelle — ex. `4197`)
 
 ### Installation de l'intégration
 
@@ -93,7 +93,7 @@ Paramètres → Appareils et services → **Ajouter une intégration** → *PAC 
 | Champ | Valeur usuelle |
 |---|---|
 | Adresse IP | IP de la passerelle RS485 → Ethernet |
-| Port TCP | `4196` / `4197` selon la passerelle |
+| Port TCP | `4196` (défaut Waveshare ; modifiable — ex. `4197`) |
 | Adresse Modbus (esclave) | `1` |
 | Intervalle de rafraîchissement | `30` s |
 
@@ -257,7 +257,7 @@ Connect **`B` → `B`**, **`A` → `A`** and **`G` → `GND`**. **`+12V` is not 
 
 - Mode **Modbus TCP server**
 - Serial: **9600 / 8N1**, slave **1**
-- Static IP, TCP port (gateway dependent: `4196` or `4197` on Waveshare)
+- Static IP, TCP port **`4196`** (Waveshare default; configurable in the gateway web UI — e.g. `4197`)
 
 ### Integration installation
 
@@ -278,7 +278,7 @@ Settings → Devices & services → **Add integration** → *PAC Piscine Geco*.
 | Field | Usual value |
 |---|---|
 | IP address | RS485 → Ethernet gateway IP |
-| TCP port | `4196` / `4197` depending on the gateway |
+| TCP port | `4196` (Waveshare default; configurable — e.g. `4197`) |
 | Modbus unit (slave) id | `1` |
 | Refresh interval | `30` s |
 
