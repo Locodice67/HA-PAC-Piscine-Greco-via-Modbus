@@ -72,9 +72,9 @@ Dernière mise à jour : 2026-09-11.
 - [ ] **Valeurs du mode de travail** : aligner sur la fiche (`0` Smart / `1` Silence / `3` Turbo) selon le résultat du test.
 
 ### 7. Documentation & ergonomie de configuration 🟠
-- [ ] **README — guide de montage** : ajouter les **photos** (ouverture du capot, repérage du connecteur RS485/Wi-Fi, câblage A/B/12 V) dans `images/`
-- [ ] **README — liens d'achat** : ajouter les liens (Amazon) des **connecteurs** et de la passerelle RS485 → Ethernet
-  - Objectif : qu'un « nerd » puisse tout faire de bout en bout sans aide
+- [x] **README — guide de montage** : photos **open_the_box / localise_the_connecteur / wire_the_connector** intégrées dans `images/` ✅ *fait — `15f0f54`*
+- [x] **README — liens d'achat** : kit **JST-XH** (Amazon) + passerelle Waveshare ✅ *fait — `8e73149`*
+  - N° de série **flouté** sur la photo du connecteur (*`9120856`*)
 - [x] **Config flow — Marque → Modèle** : étape « Marque » (**Geco**) puis **liste des modèles** (GEPAC08), pour ne créer que les registres du modèle choisi ✅ *fait — commit `7cba3bd`*
 
 ---
