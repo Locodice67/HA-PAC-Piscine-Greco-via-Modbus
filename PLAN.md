@@ -71,6 +71,12 @@ Dernière mise à jour : 2026-09-11.
 - [ ] **Températures type 2** (`3x6`, `3x12`) : `scale 0.5`, **`offset 0`** (et non `offset -30`).
 - [ ] **Valeurs du mode de travail** : aligner sur la fiche (`0` Smart / `1` Silence / `3` Turbo) selon le résultat du test.
 
+### 7. Documentation & ergonomie de configuration 🟠
+- [ ] **README — guide de montage** : ajouter les **photos** (ouverture du capot, repérage du connecteur RS485/Wi-Fi, câblage A/B/12 V) dans `images/`
+- [ ] **README — liens d'achat** : ajouter les liens (Amazon) des **connecteurs** et de la passerelle RS485 → Ethernet
+  - Objectif : qu'un « nerd » puisse tout faire de bout en bout sans aide
+- [ ] **Config flow — Marque → Modèle** : étape « Marque » (**Geco**) puis **liste des modèles**, pour ne créer que les registres du modèle choisi (comme l'intégration *pool_technologie*)
+
 ---
 
 ## Points ouverts / à trancher
