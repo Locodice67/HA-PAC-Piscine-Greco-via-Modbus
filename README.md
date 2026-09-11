@@ -51,7 +51,7 @@ Repérage indicatif sur la carte (à vérifier sur la tienne) : `B`, `A`, `12V-`
 **Via HACS (dépôt personnalisé)**
 
 1. HACS → Intégrations → ⋯ → *Dépôts personnalisés*
-2. Ajouter `Locodice67/HA-PAC-Piscine-Geco-via-Modbus`, catégorie *Intégration*
+2. Ajouter `Locodice67/HA-Swimming-Pool-Heat-Pump-Geco-Modbus`, catégorie *Intégration*
 3. Installer, puis redémarrer Home Assistant
 
 **Manuelle**
@@ -208,7 +208,7 @@ Indicative pinout on the board (check yours): `B`, `A`, `12V-`, `12V+`.
 **Via HACS (custom repository)**
 
 1. HACS → Integrations → ⋯ → *Custom repositories*
-2. Add `Locodice67/HA-PAC-Piscine-Geco-via-Modbus`, category *Integration*
+2. Add `Locodice67/HA-Swimming-Pool-Heat-Pump-Geco-Modbus`, category *Integration*
 3. Install, then restart Home Assistant
 
 **Manual**
