@@ -34,7 +34,7 @@ Chaque fonction est exposée comme entité dans Home Assistant (voir le tableau 
 
 - Une **passerelle RS485 → Ethernet** (testé : Waveshare RS485 TO ETH / POE).
 - Le connecteur **RS485** de la carte de contrôle de la PAC (port prévu pour le module Wi-Fi optionnel).
-- Un câble entre la PAC et la passerelle (UTP conseillé : 2 fils pour A/B, 2 pour l'alimentation 12 V).
+- Un câble entre la PAC et la passerelle (UTP conseillé : **3 fils** — `B`, `A`, `G`).
 
 Le port RS485 est le connecteur **`CN12`** de la carte de contrôle (broches `B`, `A`, `G`, `+12V`).
 
@@ -54,7 +54,7 @@ C'est le petit connecteur **4 broches `CN12`** de la carte (série `MWH298-V3`) 
 
 **3. Câbler le connecteur**
 
-Relier `B` / `A` (RS485) et `G` / `+12V` (alimentation) à la passerelle RS485 → Ethernet.
+Relier **`B` → `B`**, **`A` → `A`** et **`G` → `GND`**. Le **`+12V` n'est pas nécessaire** : la passerelle est alimentée en **PoE** (ou par sa propre alimentation).
 
 ![Câblage du connecteur](images/wire_the_connector.jpg)
 
@@ -219,7 +219,7 @@ Every feature is exposed as an entity in Home Assistant (see the entity table be
 
 - An **RS485 → Ethernet gateway** (tested: Waveshare RS485 TO ETH / POE).
 - The **RS485** connector on the heat pump control board (the port intended for the optional Wi-Fi module).
-- A cable between the heat pump and the gateway (UTP recommended: 2 wires for A/B, 2 for the 12 V supply).
+- A cable between the heat pump and the gateway (UTP recommended: **3 wires** — `B`, `A`, `G`).
 
 The RS485 port is the **`CN12`** connector on the control board (pins `B`, `A`, `G`, `+12V`).
 
@@ -239,7 +239,7 @@ It is the small **4-pin `CN12`** connector on the board (MWH298-V3 series) — p
 
 **3. Wire the connector**
 
-Connect `B` / `A` (RS485) and `G` / `+12V` (power) to the RS485 → Ethernet gateway.
+Connect **`B` → `B`**, **`A` → `A`** and **`G` → `GND`**. **`+12V` is not needed**: the gateway is powered over **PoE** (or by its own supply).
 
 ![Wiring the connector](images/wire_the_connector.jpg)
 
