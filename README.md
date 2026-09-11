@@ -36,9 +36,27 @@ Chaque fonction est exposée comme entité dans Home Assistant (voir le tableau 
 - Le connecteur **RS485** de la carte de contrôle de la PAC (port prévu pour le module Wi-Fi optionnel).
 - Un câble entre la PAC et la passerelle (UTP conseillé : 2 fils pour A/B, 2 pour l'alimentation 12 V).
 
-Repérage indicatif sur la carte (à vérifier sur la tienne) : `B`, `A`, `12V-`, `12V+`.
+Le port RS485 est le connecteur **`CN12`** de la carte de contrôle (broches `B`, `A`, `G`, `+12V`).
 
-> 📷 Les photos du montage peuvent être ajoutées dans `images/`.
+### Montage pas à pas
+
+**1. Ouvrir le coffret électrique**
+
+Couper l'alimentation puis **attendre 5 minutes** avant d'ouvrir (voir l'étiquette « CAUTION » sur le capot).
+
+![Ouverture du coffret](images/open_the_box.jpg)
+
+**2. Repérer le connecteur RS485**
+
+C'est le petit connecteur **4 broches `CN12`** de la carte (série `MWH298-V3`) — broches `B`, `A`, `G`, `+12V`. C'est le port normalement prévu pour le module Wi-Fi optionnel.
+
+![Repérage du connecteur CN12](images/localise_the_connecteur.jpg)
+
+**3. Câbler le connecteur**
+
+Relier `B` / `A` (RS485) et `G` / `+12V` (alimentation) à la passerelle RS485 → Ethernet.
+
+![Câblage du connecteur](images/wire_the_connector.jpg)
 
 ### Configuration de la passerelle
 
@@ -193,9 +211,27 @@ Every feature is exposed as an entity in Home Assistant (see the entity table be
 - The **RS485** connector on the heat pump control board (the port intended for the optional Wi-Fi module).
 - A cable between the heat pump and the gateway (UTP recommended: 2 wires for A/B, 2 for the 12 V supply).
 
-Indicative pinout on the board (check yours): `B`, `A`, `12V-`, `12V+`.
+The RS485 port is the **`CN12`** connector on the control board (pins `B`, `A`, `G`, `+12V`).
 
-> 📷 Build photos can be added under `images/`.
+### Step-by-step assembly
+
+**1. Open the electrical box**
+
+Switch off the power, then **wait 5 minutes** before opening (see the “CAUTION” label on the cover).
+
+![Opening the box](images/open_the_box.jpg)
+
+**2. Locate the RS485 connector**
+
+It is the small **4-pin `CN12`** connector on the board (MWH298-V3 series) — pins `B`, `A`, `G`, `+12V`. This is the port normally intended for the optional Wi-Fi module.
+
+![Locating the CN12 connector](images/localise_the_connecteur.jpg)
+
+**3. Wire the connector**
+
+Connect `B` / `A` (RS485) and `G` / `+12V` (power) to the RS485 → Ethernet gateway.
+
+![Wiring the connector](images/wire_the_connector.jpg)
 
 ### Gateway configuration
 
