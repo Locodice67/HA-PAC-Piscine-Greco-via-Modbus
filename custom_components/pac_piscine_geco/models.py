@@ -10,7 +10,7 @@
 
 DEVICE_NAME = "PAC Piscine"
 MANUFACTURER = "Geco"
-MODEL = "IPHCR45 (Modbus)"
+MODEL = "GEPAC08 (Modbus)"
 
 # Capteurs analogiques (registres d'entrée). value = raw * scale + offset
 SENSORS = [
@@ -57,7 +57,7 @@ SENSORS = [
         "device_class": "current",
         "state_class": "measurement",
         "min_valid": 0,
-        "max_valid": 100,
+        "max_valid": 10,
     },
     {
         "translation_key": "tension_pfc",

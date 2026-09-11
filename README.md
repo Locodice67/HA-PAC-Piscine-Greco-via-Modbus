@@ -1,7 +1,7 @@
 # HA — PAC Piscine Geco via Modbus
 
 Intégration personnalisée Home Assistant pour la **PAC (pompe à chaleur) de piscine
-Geco** (modèle IPHCR45 et contrôleurs proches des séries Geco / AES / Madimack)
+Geco** (modèle **GEPAC08**, contrôleurs proches des cartes MWH216 / MWH298)
 exposée en **Modbus TCP** via une passerelle RS485 → Ethernet.
 
 ## Entités créées
@@ -53,9 +53,38 @@ Paramètres → Appareils et services → Ajouter une intégration → **PAC Pis
 
 L'intervalle est modifiable ensuite via le bouton *Configurer* de l'intégration.
 
+## Matériel de référence
+
+Valeurs relevées sur la plaque signalétique de l'unité de développement.
+
+**GECO — Swimming Pool Heat Pump — modèle `GEPAC08`** (compresseur **INVERTER**)
+
+| Donnée | Valeur | Conditions |
+|---|---|---|
+| Puissance chauffage | 8,4 kW | air 26 °C / eau 26 °C / 80 % HR |
+| COP | 14,1 ~ 7,0 | idem |
+| COP à 50 % | 10,3 | idem |
+| Puissance chauffage | 6,1 kW | air 15 °C / eau 26 °C / 70 % HR |
+| COP | 7,0 ~ 4,8 | idem |
+| COP à 50 % | 6,3 | idem |
+| Puissance froid | 4,0 kW | air 35 °C / eau 28 °C / 80 % HR |
+| Alimentation | 230 V / 1 Ph / 50 Hz | — |
+| Pression sonore à 1 m | 38,8 ~ 48,2 dB(A) | — |
+| Pression sonore à 50 % | 41,4 dB(A) | — |
+| Puissance absorbée | 0,17 ~ 1,2 kW | air 15 °C |
+| Courant absorbé | 0,74 ~ 5,2 A | air 15 °C |
+| Courant max | 8,5 A | — |
+| Débit d'eau conseillé | 2 ~ 4 m³/h | — |
+| Fluide frigorigène | R32 — 650 g | GWP 675 · éq. CO₂ 0,439 t |
+| Indice de protection | IPX4 | — |
+| Poids | 45 kg | — |
+
+La fiche Modbus officielle des cartes **MWH216 / MWH298** s'applique à cette unité.
+
 ## Avertissement
 
-Les adresses de registres proviennent d'un projet communautaire de rétro-ingénierie
-sur une PAC Geco IPHCR45. Les cartes Geco / AES / Madimack se ressemblent beaucoup,
-mais le modèle exact peut différer. **Vérifie les valeurs (températures eau/air en
-particulier) contre les mesures réelles avant toute mise en production.**
+Les adresses de registres proviennent de la fiche Modbus officielle des cartes
+MWH216 / MWH298 et d'un projet communautaire de rétro-ingénierie. Les cartes
+Geco / AES / Madimack se ressemblent beaucoup, mais le modèle exact peut différer.
+**Vérifie les valeurs (températures eau/air en particulier) contre les mesures
+réelles avant toute mise en production.**
