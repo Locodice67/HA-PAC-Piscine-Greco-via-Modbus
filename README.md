@@ -58,6 +58,13 @@ Relier `B` / `A` (RS485) et `G` / `+12V` (alimentation) à la passerelle RS485 �
 
 ![Câblage du connecteur](images/wire_the_connector.jpg)
 
+### 🛒 Où acheter
+
+| Article | Lien |
+|---|---|
+| **Kit de connecteurs JST-XH** (2/3/4/5/6 broches, pas 2,54 mm) — pour réaliser le connecteur `CN12` | [Amazon.fr — YIXISI, 460 pièces](https://www.amazon.fr/dp/B082ZLYRRN) |
+| **Passerelle RS485 → Ethernet** | Waveshare RS485 TO ETH / POE — voir la [doc Waveshare](https://www.waveshare.com/wiki/RS485_TO_ETH_(B)) |
+
 ### Configuration de la passerelle
 
 - Mode **Modbus TCP server**
@@ -232,6 +239,13 @@ It is the small **4-pin `CN12`** connector on the board (MWH298-V3 series) — p
 Connect `B` / `A` (RS485) and `G` / `+12V` (power) to the RS485 → Ethernet gateway.
 
 ![Wiring the connector](images/wire_the_connector.jpg)
+
+### 🛒 Where to buy
+
+| Item | Link |
+|---|---|
+| **JST-XH connector kit** (2/3/4/5/6 pins, 2.54 mm) — to build the `CN12` connector | [Amazon.fr — YIXISI, 460 pcs](https://www.amazon.fr/dp/B082ZLYRRN) |
+| **RS485 → Ethernet gateway** | Waveshare RS485 TO ETH / POE — see the [Waveshare docs](https://www.waveshare.com/wiki/RS485_TO_ETH_(B)) |
 
 ### Gateway configuration
 
